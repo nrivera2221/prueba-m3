@@ -1,0 +1,10 @@
+@use "../abstracts/variables";
+@use"../abstracts/mixin" as *;
+
+body{
+margin: 0 100px;
+background-color: variables.$background-color;
+@include media-up(md){
+    margin: 0 10px;
+}
+}

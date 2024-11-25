@@ -1,0 +1,22 @@
+@use"../abstracts/variables";
+/*checkmark*/
+.form-check-input:checked {
+    background-color: variables.$color-check; /* Color de fondo cuando está marcado (azul) */
+    border-color: variables.$primary; /* Color del borde cuando está marcado (azul) */
+}
+
+.form-check-input:checked::after {
+    background-color: variables.$primary; /* Color del checkmark (blanco) */
+}
+
+.form-check-input {
+    width: 1.25rem; /* Ajusta el tamaño según sea necesario */
+    height: 1.25rem; /* Ajusta el tamaño según sea necesario */
+}
+.alert-hidden {
+    display: none;
+}
+
+.custom-modal{
+    border: 2px solid #007bff;
+}

@@ -1,0 +1,19 @@
+@use"../abstracts/mixin" as *;
+.navbar{
+    padding: 0 100px;
+    transition: background-color 0.3s ease;
+    img{
+        width: 50px;
+    }
+    @mixin media-up($md){
+        padding: 0 10px;
+    }
+}
+
+.navbar-transparent{
+    background-color: rgba(0, 0, 0, 0); /* Ajusta el color y la transparencia aquí */
+}
+
+.navbar-solid {
+    background-color: rgba(0, 0, 0, 0.9); /* Ajusta la opacidad según sea necesario */
+}

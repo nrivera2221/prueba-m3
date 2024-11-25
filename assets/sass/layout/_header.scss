@@ -1,0 +1,20 @@
+@use"../abstracts/mixin" as *;
+header{
+    height: 500px;
+    @include media-up(md){
+        height: 300px;
+    }
+}
+
+#mycarousel{
+    height: 500px;
+    img{
+        height: 500px;
+    }
+    @include media-up(md){
+        height: 300px;
+        img{
+            height: 300px;
+        }
+    }
+}
